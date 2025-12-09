@@ -29,6 +29,32 @@
         "cells": [
           {
             "position": {
+              "x": 1200,
+              "y": 160
+            },
+            "size": {
+              "width": 340,
+              "height": 210
+            },
+            "attrs": {
+              "label": {
+                "text": "Límite Base de datos / Servidor"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "ea943eba-fd63-4ff0-9c71-abe4e2884588",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Límite Base de datos / Servidor",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 612,
               "y": 200
             },
@@ -269,7 +295,7 @@
           },
           {
             "position": {
-              "x": 1135,
+              "x": 1285,
               "y": 220
             },
             "size": {
@@ -405,8 +431,8 @@
                 "text": "Administrador"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -503,9 +529,30 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "691b45f8-cbc7-476b-b9df-11a00265cad9",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 2,
+                  "score": ""
+                }
+              ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1006,7 +1053,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "JWT Token",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1019,7 +1066,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "JWT Token"
             ],
             "id": "a191c910-ff36-4b62-856c-42800a0a3319",
             "source": {
@@ -1030,6 +1077,108 @@
               "cell": "753a51ba-5ab8-4526-8453-468db54698b4",
               "port": "4b2880eb-fda3-4bf2-9423-c9007cd5aad3"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Consultas",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Consultas"
+            ],
+            "id": "b541e2a9-d3a5-4d88-a23d-5e7c34092053",
+            "source": {
+              "cell": "7678b169-2d7c-4209-a37b-b0acfdcbc785",
+              "port": "4b2880eb-fda3-4bf2-9423-c9007cd5aad3"
+            },
+            "target": {
+              "cell": "15f71b63-7d41-40bb-9750-c5e4e0d48425",
+              "port": "d5f98436-6d57-4e75-ab6c-3f1fa3e537d4"
+            },
+            "vertices": [
+              {
+                "x": 1160,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuestas",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Respuestas"
+            ],
+            "id": "ebb1bcd6-f31c-4c6c-852d-9e7dce94ab85",
+            "source": {
+              "cell": "15f71b63-7d41-40bb-9750-c5e4e0d48425",
+              "port": "d5f98436-6d57-4e75-ab6c-3f1fa3e537d4"
+            },
+            "target": {
+              "cell": "7678b169-2d7c-4209-a37b-b0acfdcbc785",
+              "port": "4b2880eb-fda3-4bf2-9423-c9007cd5aad3"
+            },
+            "vertices": [
+              {
+                "x": 1150,
+                "y": 290
+              }
+            ]
           }
         ],
         "description": "Modelo de amenazas para las operaciones entre el cliente, el servidor web y la base de datos"
@@ -1037,6 +1186,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Humberto Vera Amaro",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
