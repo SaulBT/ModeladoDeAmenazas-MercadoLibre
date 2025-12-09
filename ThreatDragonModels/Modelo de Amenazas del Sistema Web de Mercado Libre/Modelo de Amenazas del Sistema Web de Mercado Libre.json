@@ -29,7 +29,7 @@
         "cells": [
           {
             "position": {
-              "x": 520,
+              "x": 612,
               "y": 200
             },
             "size": {
@@ -149,8 +149,8 @@
           },
           {
             "position": {
-              "x": 742,
-              "y": 210
+              "x": 902,
+              "y": 200
             },
             "size": {
               "width": 130,
@@ -269,8 +269,8 @@
           },
           {
             "position": {
-              "x": 955,
-              "y": 230
+              "x": 1135,
+              "y": 220
             },
             "size": {
               "width": 170,
@@ -626,38 +626,6 @@
             }
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "1928ed3f-85d8-48f8-914f-cc5f6d0ff75a",
-            "source": {
-              "x": 250,
-              "y": 100
-            },
-            "target": {
-              "x": 250,
-              "y": 450
-            },
-            "vertices": [
-              {
-                "x": 330,
-                "y": 270
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -774,51 +742,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Respuesta web",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Respuesta web"
-            ],
-            "id": "7fdeeeaf-7151-4b0e-bc18-f410070bdbc1",
-            "source": {
-              "x": 520,
-              "y": 270
-            },
-            "target": {
-              "cell": "ccb83aba-c2f7-434a-a0bf-7443908fa269",
-              "port": "f7b82cbf-bd15-48f2-94f1-62f280dc67f0"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Petición web",
               "description": "",
               "outOfScope": false,
@@ -849,6 +772,179 @@
                 "y": 370
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta web",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Respuesta web"
+            ],
+            "id": "7fdeeeaf-7151-4b0e-bc18-f410070bdbc1",
+            "source": {
+              "cell": "753a51ba-5ab8-4526-8453-468db54698b4",
+              "port": "1dad5a22-76da-4144-8fa1-df0c5a6a6efd"
+            },
+            "target": {
+              "cell": "ccb83aba-c2f7-434a-a0bf-7443908fa269",
+              "port": "f7b82cbf-bd15-48f2-94f1-62f280dc67f0"
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Límite Usuario/Servidor Web",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Límite Usuario/Servidor Web"
+            ],
+            "id": "1928ed3f-85d8-48f8-914f-cc5f6d0ff75a",
+            "source": {
+              "x": 230,
+              "y": 80
+            },
+            "target": {
+              "x": 240,
+              "y": 460
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 270
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Consultas",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Consultas"
+            ],
+            "id": "620e7678-6925-4698-989a-48670db877f6",
+            "source": {
+              "cell": "753a51ba-5ab8-4526-8453-468db54698b4",
+              "port": "6ccc9b93-f419-40a6-b515-09288d712849"
+            },
+            "target": {
+              "cell": "7678b169-2d7c-4209-a37b-b0acfdcbc785",
+              "port": "6ccc9b93-f419-40a6-b515-09288d712849"
+            },
+            "vertices": [
+              {
+                "x": 840,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Autenticación",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Autenticación"
+            ],
+            "id": "b5ae1c84-db07-4675-9b2c-1c1813122f18",
+            "source": {
+              "cell": "753a51ba-5ab8-4526-8453-468db54698b4",
+              "port": "a32015e9-0436-436b-8ae0-0edf5e7d099c"
+            },
+            "target": {
+              "cell": "7678b169-2d7c-4209-a37b-b0acfdcbc785",
+              "port": "6ccc9b93-f419-40a6-b515-09288d712849"
+            }
           }
         ],
         "description": "Modelo de amenazas para las operaciones entre el cliente, el servidor web y la base de datos"
