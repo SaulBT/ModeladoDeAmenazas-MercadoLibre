@@ -30,7 +30,7 @@
           {
             "position": {
               "x": 520,
-              "y": 210
+              "y": 200
             },
             "size": {
               "width": 130,
@@ -677,7 +677,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Petición web",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -690,7 +690,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Petición web"
             ],
             "id": "44d5c5ab-d269-441d-8b69-e0ced8db7e0a",
             "source": {
@@ -698,13 +698,155 @@
               "y": 200
             },
             "target": {
-              "x": 500,
-              "y": 250
+              "cell": "753a51ba-5ab8-4526-8453-468db54698b4",
+              "port": "6ccc9b93-f419-40a6-b515-09288d712849"
             },
             "vertices": [
               {
                 "x": 480,
                 "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta web",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Respuesta web"
+            ],
+            "id": "ec1116cd-dc0f-40ba-a03f-c20dd3693331",
+            "source": {
+              "cell": "753a51ba-5ab8-4526-8453-468db54698b4",
+              "port": "1dad5a22-76da-4144-8fa1-df0c5a6a6efd"
+            },
+            "target": {
+              "cell": "209efc37-b478-49cf-adf9-826feb7f203a",
+              "port": "f7b82cbf-bd15-48f2-94f1-62f280dc67f0"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta web",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Respuesta web"
+            ],
+            "id": "7fdeeeaf-7151-4b0e-bc18-f410070bdbc1",
+            "source": {
+              "x": 520,
+              "y": 270
+            },
+            "target": {
+              "cell": "ccb83aba-c2f7-434a-a0bf-7443908fa269",
+              "port": "f7b82cbf-bd15-48f2-94f1-62f280dc67f0"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Petición web",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Petición web"
+            ],
+            "id": "354eaed8-1f2d-471d-a3bc-d402dbf399db",
+            "source": {
+              "x": 240,
+              "y": 330
+            },
+            "target": {
+              "cell": "753a51ba-5ab8-4526-8453-468db54698b4",
+              "port": "a32015e9-0436-436b-8ae0-0edf5e7d099c"
+            },
+            "vertices": [
+              {
+                "x": 480,
+                "y": 370
               }
             ]
           }
